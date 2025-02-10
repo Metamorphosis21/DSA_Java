@@ -1,12 +1,15 @@
+import java.util.Arrays;
 
 public class EasyMediumStrings {
     public static void main(String[] args) {
         // String S = "(()())(()())";
         // System.out.println(removeOutermostParenthesis(S));
 
-        String s = "The sky is blue";
-        System.out.println(checkPalindrome(s));
+        String s = "The sky       is blue";
+        // System.out.println(checkPalindrome(s));
+        checkPalindrome(s);
     }
+
 
     // static String removeOutermostParenthesis(String S){
     //     int cnt = 0;
@@ -25,7 +28,13 @@ public class EasyMediumStrings {
     //     return sb.toString();
     // }
 
-    static String checkPalindrome(String s){
-        return s.trim();
+    static void checkPalindrome(String s){
+        String s_arr[] = s.trim().split(" ");
+        String newstr = "";
+        for(int i = s_arr.length-1; i >= 0; i--){
+            newstr += s_arr[i]+" ";
+        }
+        System.out.println(Arrays.toString(s_arr));
+        System.out.println(newstr);        
     }
 }
