@@ -1,13 +1,14 @@
-import java.util.Arrays;
 
 public class EasyMediumStrings {
     public static void main(String[] args) {
         // String S = "(()())(()())";
         // System.out.println(removeOutermostParenthesis(S));
 
-        String s = "The sky       is blue";
+        // String s = "The sky       is blue";
         // System.out.println(checkPalindrome(s));
-        checkPalindrome(s);
+        // checkPalindrome(s);
+
+        
     }
 
 
@@ -28,13 +29,23 @@ public class EasyMediumStrings {
     //     return sb.toString();
     // }
 
-    static void checkPalindrome(String s){
-        String s_arr[] = s.trim().split(" ");
-        String newstr = "";
-        for(int i = s_arr.length-1; i >= 0; i--){
-            newstr += s_arr[i]+" ";
-        }
-        System.out.println(Arrays.toString(s_arr));
-        System.out.println(newstr);        
-    }
+    // static String checkPalindrome(String s){
+        // String s_arr[] = s.trim().split(" ");
+        // String newstr = "";
+        // for(int i = s_arr.length-1; i >= 0; i--){
+        //     newstr += s_arr[i]+" ";
+        // }
+        // System.out.println(Arrays.toString(s_arr));
+        // System.out.println(newstr);       
+        
+        // StringBuilder sb = new StringBuilder();
+        // String s_arr[] = s.replaceAll("\\s+", " ").split(" ");
+        // for(int i = s_arr.length - 1; i >= 0; i--){
+        //     sb.append(s_arr[i]);
+        //     if(i>0)sb.append(" ");
+        // }
+        // return sb.toString();
+    // }
+
+
 }

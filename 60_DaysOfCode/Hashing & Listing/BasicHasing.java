@@ -87,5 +87,13 @@ public class BasicHasing {
 
         hmp.clear();//clear()
         System.out.println(hmp.isEmpty());//isEmpty()
+
+        // Converting hashmap(unsorted) to a list(sorted)
+        List<Map.Entry<Integer, Integer>> hlist = new ArrayList<>(hmp.entrySet());
+        System.out.println(hlist);
+
+        // Sorting it in descending order
+        hlist.sort((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
+        System.out.println(hlist);
     }
 }
