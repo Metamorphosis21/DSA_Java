@@ -25,7 +25,10 @@ public class DoubleLL {
         // head = DLLdelete(head, 6);
         // DLLtraverse(head);
 
-        head = DLLinsert(head, 90, 3);
+        // head = DLLinsert(head, 90, 3);
+        // DLLtraverse(head);
+
+        head = DLLreverse(head);
         DLLtraverse(head);
 
     }
@@ -146,4 +149,17 @@ public class DoubleLL {
     
         return head;
     }       
+
+    static Node DLLreverse(Node head){
+        if(head == null || head.next == null)
+            return head;
+        Node prev = null , current = head;
+        while(current != null){
+            prev = current.back;
+            current.back = current.next;
+            current.next = prev;
+            current = current.back;
+        }
+        return prev.back;
+    }
 }
