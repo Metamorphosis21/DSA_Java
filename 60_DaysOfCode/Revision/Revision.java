@@ -1,12 +1,12 @@
-import java.util.*;
+// import java.util.*;
 
 public class Revision {
     public static void main(String[] args) {
 
-        int a[] = { 1,1,2,3,4 };
-        int b[] = { 1,5,6 };
-        int m = a.length - 1;
-        int n = b.length -1;
+        // int a[] = { 1,1,2,3,4 };
+        // int b[] = { 1,5,6 };
+        // int m = a.length - 1;
+        // int n = b.length -1;
 
         // Easy Arrays -
         // System.out.println(SecondLargestElement(a, n);

@@ -21,10 +21,13 @@ public class SingleLL {
         LLtraverse(head);
         LLcountsearch(head, 4);
 
-        head = LLdelete(head, 8);
-        LLtraverse(head);
+        // head = LLdelete(head, 8);
+        // LLtraverse(head);
 
-        head = LLinsert(head, 0, 1);
+        // head = LLinsert(head, 0, 1);
+        // LLtraverse(head);
+
+        head = LLreverse(head);
         LLtraverse(head);
 
     }
@@ -144,4 +147,17 @@ public class SingleLL {
         }
         return head;
     }
-}
+
+    static Node LLreverse(Node head) {
+        if(head == null || head.next == null)
+            return head;
+        Node o = null , p = head;
+        while(p != null){
+            Node n = p.next;
+            p.next = o;
+            o = p;
+            p = n;
+        }
+        return o;
+    }
+} 

@@ -2,9 +2,9 @@ import java.util.*;
 
 public class EasyArrays {
     public static void main(String[] args) {
-        int[] arr = { 1,1,0,1,1,0,1,1,0,0,1,1 };
-        int[] sortArr1 = { 1,2,3,4,5,7,8,9};
-        int[] sortArr2 = { 2,4,6,8,9,11};
+        // int[] arr = { 1,1,0,1,1,0,1,1,0,0,1,1 };
+        // int[] sortArr1 = { 1,2,3,4,5,7,8,9};
+        // int[] sortArr2 = { 2,4,6,8,9,11};
         int[] dupArr = { 1, 1, 3, 4, 4, 5, 5 };
         // System.out.println("Largest element in the array is: " + BruteMaxElement(arr));
         // System.out.println("Largest element in the array is: " + RecMaxElement(arr,arr.length - 1));
